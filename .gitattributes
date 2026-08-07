@@ -1,0 +1,20 @@
+# Handle line endings automatically for text files
+* text=auto
+
+# Explicitly declare text files to always use LF (Linux/Mac style)
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+.gitignore text eol=lf
+
+# Explicitly declare text files to always use CRLF (Windows style)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Denote files that are binary (should not be touched by Git)
+*.png binary
+*.jpg binary
+*.gif binary

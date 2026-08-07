@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Git Essentials</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        header {
+            background-color: #f05032;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #f05032;
+            border-bottom: 2px solid #f05032;
+            padding-bottom: 5px;
+        }
+        .command-box {
+            background-color: #2d3748;
+            color: #a3e635;
+            padding: 12px;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .note {
+            background-color: #e0f2fe;
+            border-left: 4px solid #0284c7;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Git Interactive Learning Guide</h1>
+        <p>Your quick-reference cheat sheet for mastering version control.</p>
+    </header>
+
+    <div class="section">
+        <h2>1. What is Git?</h2>
+        <p>Git is a <strong>Distributed Version Control System (DVCS)</strong>. It tracks changes in your source code during software development, allowing multiple developers to work together smoothly without overwriting each other's work.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Initial Setup</h2>
+        <p>Before making your first commit, configure your identity so Git knows who authored the changes.</p>
+        <div class="command-box">git config --global user.name "Your Name"</div>
+        <div class="command-box">git config --global user.email "your.email@example.com"</div>
+    </div>
+
+    <div class="section">
+        <h2>3. Starting a Repository</h2>
+        <p>Initialize a brand new local repository, or clone an existing project from a remote server like GitHub.</p>
+        <div class="command-box">git init</div>
+        <p><em>Creates a hidden .git directory in your current project folder.</em></p>
+        <div class="command-box">git clone &lt;repository-url&gt;</div>
+        <p><em>Downloads an existing project to your computer.</em></p>
+    </div>
+
+    <div class="section">
+        <h2>4. The Basic Workflow</h2>
+        <p>Git projects have three main areas: the Working Directory, the Staging Area, and the Git Repository.</p>
+        
+        <p><strong>Step A: Check project status</strong></p>
+        <div class="command-box">git status</div>
+
+        <p><strong>Step B: Stage your changes</strong></p>
+        <div class="command-box">git add index.html</div>
+        <p><em>Or use <code>git add .</code> to stage all modified files at once.</em></p>
+
+        <p><strong>Step C: Commit your changes</strong></p>
+        <div class="command-box">git commit -m "Add core learning layout"</div>
+    </div>
+
+    <div class="section">
+        <h2>5. Branching & Merging</h2>
+        <p>Branches let you isolate your work to build new features safely without breaking the main project code.</p>
+        <div class="command-box">git branch &lt;branch-name&gt;</div>
+        <p><em>Creates a new branch.</em></p>
+        <div class="command-box">git checkout &lt;branch-name&gt;</div>
+        <p><em>Switches your working files to that branch.</em></p>
+        <div class="command-box">git merge &lt;branch-name&gt;</div>
+        <p><em>Combines the specified branch's history into your current active branch.</em></p>
+    </div>
+
+    <div class="section">
+        <div class="note">
+            <strong>Pro Tip:</strong> Always run <code>git pull</code> before starting a new feature branch to ensure your local history matches your remote team's latest updates.
+        </div>
+    </div>
+
+</body>
+</html>
