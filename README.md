@@ -5,6 +5,7 @@ An enterprise-ready project showcasing modular Git workflows and automated CI ca
 ## Features
 - Fully version-controlled codebase
 - Standardized documentation structure
+- **Status:** Active
 
 ## Tech Stack
 - **Version Control:** Git, GitHub
@@ -12,7 +13,7 @@ An enterprise-ready project showcasing modular Git workflows and automated CI ca
 
 ## Quickstart
 ```bash
-git clone [https://github.com/](https://github.com/)<YOUR_GITHUB_USERNAME>/portfolio-showcase.git
-cd portfolio-showcase
+git clone https://github.com/santosh31/versioncontrol-learn.git
+cd versioncontrol-learn
 
 Author : santosh31
